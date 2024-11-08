@@ -2,7 +2,7 @@
 
 ## Åpne motorblokken
 Bruk ulik kode for å gjøre dette
-Bruk blokken ``||basic:pause||`` og blokken ``||servos:P0.setAngle(90)||`` block and place it in the value slot of ``||basic:show number||``.
+Bruk blokken ``||basic:pause||`` og blokken ``||servos:setAngle||`` og plasser dem i ``||basic:forever|| blokken``.
 ```blocks
 basic.forever(function () {
 servos.P0.setAngle(90)
