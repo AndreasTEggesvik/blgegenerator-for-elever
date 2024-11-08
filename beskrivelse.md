@@ -2,11 +2,18 @@
 
 ## Åpne motorblokken
 Bruk ulik kode for å gjøre dette
-Get a ``||basic:temperature||`` block and place it in the value slot of ``||basic:show number||``.
+
+Bruk blokken ``||basic:pause||`` og blokken ``||servos:P0.setAngle(90)||`` block and place it in the value slot of ``||basic:show number||``.
 ```blocks
 servos.P0.setAngle(90)
+basic.pause(100)
 ```
-
+## Endre på verdiene for vinkel og pause
+Prøv å få motoren til å gå fra 0 til 180
+```blocks
+servos.P0.setAngle(0)
+servos.P0.setAngle(180)
+```
 ## Ferdig kode
 ```blocks
 basic.forever(function () {
