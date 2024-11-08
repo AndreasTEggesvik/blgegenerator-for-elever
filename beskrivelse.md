@@ -7,7 +7,12 @@ Bruk blokken ``||basic:pause||`` og blokken ``||servos:P0.setAngle(90)||`` block
 servos.P0.setAngle(90)
 basic.pause(100)
 ```
-
+## Endre på verdiene for vinkel og pause
+Prøv å få motoren til å gå fra 0 til 180
+```blocks
+servos.P0.setAngle(0)
+servos.P0.setAngle(180)
+```
 ## Ferdig kode
 ```blocks
 basic.forever(function () {
